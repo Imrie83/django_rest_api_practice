@@ -1,0 +1,10 @@
+exercises:
+    '01_Przygotowanie projektu': { max_points: 0, disabled: true, translations: { en: '01_Project preparation', pl: '01_Przygotowanie projektu' } }
+    '02_Nowa aplikacja': { max_points: 0, disabled: true, translations: { en: '02_New application', pl: '02_Nowa aplikacja' } }
+    03_Modele: { max_points: 0, disabled: true, translations: { en: 03_Models, pl: 03_Modele } }
+    '04_Serializator kina': { max_points: 0, disabled: true, translations: { en: '04_Serializer of cinema', pl: '04_Serializator kina' } }
+    '05_Widoki kina': { max_points: 0, disabled: true, translations: { en: '05_Cinema views', pl: '05_Widoki kina' } }
+    '06_Serializator seansu': { max_points: 0, disabled: true, translations: { en: '06_Serializer of screening', pl: '06_Serializator seansu' } }
+    '07_Widoki seansu': { max_points: 0, disabled: true, translations: { en: '07_Screening views', pl: '07_Widoki seansu' } }
+    '08_Filtrowanie filmów - zadanie dodatkowe': { max_points: 0, disabled: true, translations: { en: '08_Movie filtering - additional task', pl: '08_Filtrowanie filmów - zadanie dodatkowe' } }
+    '09_Wyszukiwanie seansów - zadanie dodatkowe': { max_points: 0, disabled: true, translations: { en: '09_Screening search - additional task', pl: '09_Wyszukiwanie seansów - zadanie dodatkowe' } }
