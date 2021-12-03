@@ -46,4 +46,3 @@ def create_fake_movie():
     new_movie = Movie.objects.create(**movie_data)
     for actor in actors:
         new_movie.actors.add(find_person_by_name(actor))
-
