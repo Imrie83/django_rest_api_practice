@@ -7,12 +7,15 @@ class Cinema(models.Model):
     city = models.CharField(max_length=255)
     movies = models.ManyToManyField(to=Movie, through='Screening')
 
+    def __str__(self):
+        return self.name
+
 
 class Screening(models.Model):
     movie = models.ForeignKey(
         Movie, on_delete=models.CASCADE, verbose_name='Movie'
     )
     cinema = models.ForeignKey(
-        Cinema, on_delete=models.CASCADE, verbose_name='Cinem'
+        Cinema, on_delete=models.CASCADE, verbose_name='Cinema'
     )
     date = models.DateTimeField(verbose_name='Screening time')
