@@ -1,6 +1,5 @@
 from random import sample, randint, choice
 from faker import Faker
-
 from movielist.models import Person, Movie
 
 
@@ -11,6 +10,15 @@ def random_person():
     """Return a random Person object from db."""
     people = Person.objects.all()
     return choice(people)
+
+
+def fake_cinema():
+    """Generate a dict of cinemas"""
+    cinema_data = {
+        'name': f'Kino {faker.job()}',
+        'city': faker.address().city
+    }
+    return cinema_data
 
 
 def fake_movie_data():
@@ -46,3 +54,11 @@ def create_fake_movie():
     new_movie = Movie.objects.create(**movie_data)
     for actor in actors:
         new_movie.actors.add(find_person_by_name(actor))
+
+
+# def create_fake_cinema():
+#     """ Generate a new fake cinema and save to database"""
+#     movie = create_fake_movie()
+#     cinema = fake_cinema()
+#     cinema['name'] = find_ci
+
