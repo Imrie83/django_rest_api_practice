@@ -3,6 +3,7 @@ from rest_framework import generics
 from django.views import View
 from .models import Cinema, Screening
 from .serializers import CinemaSerializer, ScreeningSerializer
+from django_filters import rest_framework as filters
 
 
 class CinemaView(generics.RetrieveUpdateDestroyAPIView):
@@ -23,3 +24,4 @@ class ScreeningView(generics.RetrieveUpdateDestroyAPIView):
 class ScreeningListView(generics.ListCreateAPIView):
     queryset = Screening.objects.all()
     serializer_class = ScreeningSerializer
+    filterset_fields = ['movie', 'cinema']

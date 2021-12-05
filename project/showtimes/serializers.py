@@ -8,8 +8,11 @@ class CinemaSerializer(serializers.ModelSerializer):
         many=True,
         read_only=True,
         view_name='movie-detail',
-
     )
+
+    # def transform_movies(self, movies):
+    #     return movies.filter(y)
+
     class Meta:
         model = Cinema
         fields = ['name', 'city', 'movies']
